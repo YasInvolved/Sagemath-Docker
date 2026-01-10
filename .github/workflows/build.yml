@@ -45,5 +45,6 @@ jobs:
           context: .
           push: true
           labels: ${{ steps.meta.outputs.labels }}
+          tags: ghcr.io/${{ github.repository }}:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
