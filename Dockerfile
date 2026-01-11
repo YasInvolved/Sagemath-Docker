@@ -7,5 +7,5 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y pandoc texlive-xetex
 
 USER sage
 
-ENTRYPOINT [ "sage" ]
+ENTRYPOINT [ "/usr/local/bin/sage-entrypoint" ]
 CMD [ "sage-jupyter" ]
